@@ -1,4 +1,4 @@
-name: unionmate CI pipeline
+name: discovery-service CI pipeline
 
 on:
   push:
@@ -42,5 +42,5 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          tags: ${{ secrets.DOCKER_USERNAME }}/unionmate-be:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/unionmate-discovery-service:latest
           push: true
