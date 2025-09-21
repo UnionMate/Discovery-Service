@@ -1,4 +1,4 @@
-name: unionmate dev CD 파이프라인
+name: discovery-service dev CD 파이프라인
 
 on:
   workflow_run:
