@@ -1,0 +1,15 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: discovery-service-dev
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+  server:
+    wait-time-in-ms-when-sync-empty: 0  # 초기 레지스트리 정보가 비어 있어도 지연 없이 즉시 서버 시작
+    response-cache-update-interval-ms: 30000  # 클라이언트에게 제공할 서비스 목록 캐시를 30초마다 갱신
